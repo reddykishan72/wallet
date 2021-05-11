@@ -19,6 +19,7 @@ export const sendEmail = (
       .then(
         function (response) {
           console.log('SUCCESS!', response.status, response.text);
+          alert('Email sent successfully!')
         },
         function (error) {
           console.log('FAILED...', error);
